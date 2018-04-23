@@ -1,0 +1,51 @@
+﻿<Window x:Class="FullStackedBar2DChart.Window1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/charts" Title="Window1" Height="350" Width="620">
+    <Grid>
+        <dxc:ChartControl Name="chartControl1">
+            <dxc:ChartControl.Diagram>
+                <dxc:XYDiagram2D>
+                    <dxc:XYDiagram2D.Series>
+                        <dxc:BarFullStackedSeries2D DisplayName="First Series">
+                            <dxc:BarFullStackedSeries2D.Points>
+                                <dxc:SeriesPoint Argument="A" Value="2" />
+                                <dxc:SeriesPoint Argument="B" Value="2" />
+                                <dxc:SeriesPoint Argument="C" Value="1" />
+                                <dxc:SeriesPoint Argument="D" Value="6" />
+                            </dxc:BarFullStackedSeries2D.Points>
+                            <dxc:BarFullStackedSeries2D.Model>
+                                <dxc:SteelColumnBar2DModel />
+                            </dxc:BarFullStackedSeries2D.Model>
+                            <dxc:BarFullStackedSeries2D.PointOptions>
+                                <dxc:PointOptions>
+                                    <dxc:PointOptions.ValueNumericOptions>
+                                        <dxc:NumericOptions Format="Percent" Precision="0" />
+                                    </dxc:PointOptions.ValueNumericOptions>
+                                </dxc:PointOptions>
+                            </dxc:BarFullStackedSeries2D.PointOptions>
+                        </dxc:BarFullStackedSeries2D>
+                        <dxc:BarFullStackedSeries2D DisplayName="Second Series">
+                            <dxc:BarFullStackedSeries2D.Points>
+                                <dxc:SeriesPoint Argument="A" Value="4" />
+                                <dxc:SeriesPoint Argument="B" Value="3" />
+                                <dxc:SeriesPoint Argument="C" Value="2" />
+                                <dxc:SeriesPoint Argument="D" Value="1" />
+                            </dxc:BarFullStackedSeries2D.Points>
+                            <dxc:BarFullStackedSeries2D.Model>
+                                <dxc:SteelColumnBar2DModel />
+                            </dxc:BarFullStackedSeries2D.Model>
+                            <dxc:BarFullStackedSeries2D.PointOptions>
+                                <dxc:PointOptions>
+                                    <dxc:PointOptions.ValueNumericOptions>
+                                        <dxc:NumericOptions Format="Percent" Precision="0" />
+                                    </dxc:PointOptions.ValueNumericOptions>
+                                </dxc:PointOptions>
+                            </dxc:BarFullStackedSeries2D.PointOptions>
+                        </dxc:BarFullStackedSeries2D>
+                    </dxc:XYDiagram2D.Series>
+                </dxc:XYDiagram2D>
+            </dxc:ChartControl.Diagram>
+            <dxc:ChartControl.Legend>
+                <dxc:Legend />
+            </dxc:ChartControl.Legend>
+        </dxc:ChartControl>
+    </Grid>
+</Window>
